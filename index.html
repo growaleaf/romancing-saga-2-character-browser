@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Romancing SaGa 2: Revenge of the Seven — Character Stat Browser</title>
+<meta name="description" content="Base stats for every recruitable character in Romancing SaGa 2: Revenge of the Seven, side by side, including duplicate-named variants, for picking your next Formation." />
+<link rel="icon" href="icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <h1>Romancing SaGa 2: Revenge of the Seven</h1>
+  <p class="subtitle">Character Stat Browser</p>
+  <p class="lede">
+    Every recruitable character's base stats, side by side, in one table.
+    Includes both Gerard entries (Emperor and 2nd Prince) and both Mariah
+    entries (Diver and Crusader) as separate rows — they are not the same
+    numbers.
+  </p>
+</header>
+
+<main>
+  <section class="controls" aria-label="Search and filter">
+    <input id="search" type="text" placeholder="Search by name..." aria-label="Search by character name" />
+    <select id="classFilter" aria-label="Filter by class">
+      <option value="">All classes</option>
+    </select>
+    <span id="rowCount" class="row-count"></span>
+  </section>
+
+  <section class="table-wrap">
+    <table id="charTable">
+      <thead>
+        <tr>
+          <th data-key="name">Name</th>
+          <th data-key="cls">Class</th>
+          <th data-key="lp">LP</th>
+          <th data-key="str">Strength</th>
+          <th data-key="spd">Speed</th>
+          <th data-key="mag">Magic</th>
+          <th data-key="dex">Dexterity</th>
+          <th data-key="sta">Stamina</th>
+        </tr>
+      </thead>
+      <tbody id="charBody"></tbody>
+    </table>
+  </section>
+
+  <section class="reference">
+    <h2>Classes</h2>
+    <p class="reference-note">
+      37 unlockable classes (gendered classes shown as two slots). Numeric
+      class ability effects are not reproduced here — see the source link for
+      the full ability writeup per class.
+    </p>
+    <ul id="classList" class="chip-list"></ul>
+    <p class="source-line">
+      Source: <a href="https://game8.co/games/Romancing-Saga-2/archives/486680" target="_blank" rel="noopener">game8.co — How to Unlock All Classes</a>
+    </p>
+  </section>
+
+  <section class="reference">
+    <h2>Formations</h2>
+    <p class="reference-note">
+      32 Formation names your party can learn. Per-Formation aim bonuses and
+      effects are catalogued on the source page and are not reproduced here —
+      this is a name list for reference, not a Formation calculator.
+    </p>
+    <ul id="formationList" class="chip-list"></ul>
+    <p class="source-line">
+      Source: <a href="https://game8.co/games/Romancing-Saga-2/archives/486681" target="_blank" rel="noopener">game8.co — List of All Formations and How to Get Them</a>
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>
+    Character stat table transcribed directly from
+    <a href="https://game8.co/games/Romancing-Saga-2/archives/485574" target="_blank" rel="noopener">game8.co's List of All Characters</a>.
+    Cross-checked against an independent fan reference
+    (<a href="https://romancing-saga-2-revenge-seven.blogspot.com/p/characters.html" target="_blank" rel="noopener">romancing-saga-2-revenge-seven.blogspot.com</a>)
+    on 9 rows spanning 7 classes, including both duplicate-named pairs; all matched.
+  </p>
+  <p>
+    This game does not use a fixed stat-allocation formula — Techs and spells
+    are learned through the Glimmer combat-trigger system and post-battle
+    events. This page is a stat browser, not a build calculator.
+  </p>
+  <p class="disclaimer">
+    Fan-made reference. Not affiliated with Square Enix, Game8, or the
+    blogspot source. Base stats only — does not account for equipment,
+    class change, or Generation Skip inheritance.
+  </p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
