@@ -1,0 +1,2542 @@
+// Source: game8.co/games/Romancing-Saga-2/archives/485574 (character table),
+// archives/486680 (unlockable class list), archives/486681 (Formation name list).
+// Fetched and transcribed directly 2026-11-01. Cross-checked against
+// romancing-saga-2-revenge-seven.blogspot.com/p/characters.html on 9 rows
+// (Mariah x2, Gerard x2, Achilles, Souji, Dynamite, Abaoji, Coppelia) -- all matched.
+const CHARACTERS = [
+  {
+    "name": "Abaoji",
+    "cls": "Nomad",
+    "lp": 10,
+    "str": 17,
+    "spd": 16,
+    "mag": 15,
+    "dex": 18,
+    "sta": 15
+  },
+  {
+    "name": "Abu Hassan",
+    "cls": "Desert Guard",
+    "lp": 10,
+    "str": 18,
+    "spd": 14,
+    "mag": 17,
+    "dex": 14,
+    "sta": 17
+  },
+  {
+    "name": "Achilles",
+    "cls": "Mercenary",
+    "lp": 13,
+    "str": 19,
+    "spd": 15,
+    "mag": 14,
+    "dex": 15,
+    "sta": 19
+  },
+  {
+    "name": "Agatha",
+    "cls": "Crusader",
+    "lp": 11,
+    "str": 13,
+    "spd": 12,
+    "mag": 22,
+    "dex": 12,
+    "sta": 12
+  },
+  {
+    "name": "Agnes",
+    "cls": "Ranger",
+    "lp": 6,
+    "str": 14,
+    "spd": 16,
+    "mag": 17,
+    "dex": 20,
+    "sta": 12
+  },
+  {
+    "name": "Agrippina",
+    "cls": "Amazon",
+    "lp": 11,
+    "str": 15,
+    "spd": 17,
+    "mag": 13,
+    "dex": 19,
+    "sta": 19
+  },
+  {
+    "name": "Agung",
+    "cls": "Salamander",
+    "lp": 13,
+    "str": 22,
+    "spd": 12,
+    "mag": 17,
+    "dex": 10,
+    "sta": 21
+  },
+  {
+    "name": "Alexander",
+    "cls": "Ranger",
+    "lp": 12,
+    "str": 13,
+    "spd": 15,
+    "mag": 16,
+    "dex": 22,
+    "sta": 17
+  },
+  {
+    "name": "Algol",
+    "cls": "Freelance Mage",
+    "lp": 8,
+    "str": 12,
+    "spd": 16,
+    "mag": 19,
+    "dex": 16,
+    "sta": 15
+  },
+  {
+    "name": "Altan",
+    "cls": "Nomad",
+    "lp": 12,
+    "str": 17,
+    "spd": 17,
+    "mag": 15,
+    "dex": 19,
+    "sta": 13
+  },
+  {
+    "name": "Amethyst",
+    "cls": "Court Mage",
+    "lp": 8,
+    "str": 10,
+    "spd": 15,
+    "mag": 19,
+    "dex": 17,
+    "sta": 13
+  },
+  {
+    "name": "Amphitrite",
+    "cls": "Nereid",
+    "lp": 10,
+    "str": 10,
+    "spd": 23,
+    "mag": 20,
+    "dex": 21,
+    "sta": 10
+  },
+  {
+    "name": "Andromache",
+    "cls": "Mercenary",
+    "lp": 10,
+    "str": 19,
+    "spd": 13,
+    "mag": 15,
+    "dex": 16,
+    "sta": 18
+  },
+  {
+    "name": "Andromeda",
+    "cls": "Mercenary",
+    "lp": 7,
+    "str": 17,
+    "spd": 15,
+    "mag": 15,
+    "dex": 18,
+    "sta": 17
+  },
+  {
+    "name": "Anne",
+    "cls": "Ranger",
+    "lp": 9,
+    "str": 16,
+    "spd": 15,
+    "mag": 14,
+    "dex": 20,
+    "sta": 13
+  },
+  {
+    "name": "Aries",
+    "cls": "Court Mage",
+    "lp": 10,
+    "str": 12,
+    "spd": 13,
+    "mag": 21,
+    "dex": 16,
+    "sta": 12
+  },
+  {
+    "name": "Armanaus",
+    "cls": "Desert Guard",
+    "lp": 14,
+    "str": 19,
+    "spd": 12,
+    "mag": 18,
+    "dex": 15,
+    "sta": 16
+  },
+  {
+    "name": "Artemisia",
+    "cls": "Amazon",
+    "lp": 8,
+    "str": 15,
+    "spd": 16,
+    "mag": 14,
+    "dex": 20,
+    "sta": 18
+  },
+  {
+    "name": "Audrey",
+    "cls": "Light Infantry",
+    "lp": 15,
+    "str": 18,
+    "spd": 15,
+    "mag": 17,
+    "dex": 15,
+    "sta": 17
+  },
+  {
+    "name": "Aurora",
+    "cls": "Imperial Guard",
+    "lp": 12,
+    "str": 21,
+    "spd": 10,
+    "mag": 17,
+    "dex": 11,
+    "sta": 17
+  },
+  {
+    "name": "Awe",
+    "cls": "Salamander",
+    "lp": 14,
+    "str": 24,
+    "spd": 11,
+    "mag": 17,
+    "dex": 12,
+    "sta": 20
+  },
+  {
+    "name": "Azami",
+    "cls": "Ninja",
+    "lp": 9,
+    "str": 19,
+    "spd": 20,
+    "mag": 14,
+    "dex": 16,
+    "sta": 12
+  },
+  {
+    "name": "Badger",
+    "cls": "Vagabond",
+    "lp": 8,
+    "str": 13,
+    "spd": 18,
+    "mag": 16,
+    "dex": 17,
+    "sta": 12
+  },
+  {
+    "name": "Barbara",
+    "cls": "Crusader",
+    "lp": 11,
+    "str": 13,
+    "spd": 14,
+    "mag": 22,
+    "dex": 10,
+    "sta": 14
+  },
+  {
+    "name": "Batu",
+    "cls": "Nomad",
+    "lp": 13,
+    "str": 16,
+    "spd": 16,
+    "mag": 16,
+    "dex": 20,
+    "sta": 13
+  },
+  {
+    "name": "Bear",
+    "cls": "Heavy Infantry",
+    "lp": 16,
+    "str": 16,
+    "spd": 11,
+    "mag": 15,
+    "dex": 12,
+    "sta": 23
+  },
+  {
+    "name": "Beaver",
+    "cls": "Vagabond",
+    "lp": 11,
+    "str": 13,
+    "spd": 19,
+    "mag": 15,
+    "dex": 18,
+    "sta": 13
+  },
+  {
+    "name": "Belisarius",
+    "cls": "Imperial Guard",
+    "lp": 12,
+    "str": 23,
+    "spd": 13,
+    "mag": 14,
+    "dex": 11,
+    "sta": 19
+  },
+  {
+    "name": "Benedict",
+    "cls": "Crusader",
+    "lp": 13,
+    "str": 20,
+    "spd": 11,
+    "mag": 18,
+    "dex": 14,
+    "sta": 17
+  },
+  {
+    "name": "Besma",
+    "cls": "Nomad",
+    "lp": 9,
+    "str": 16,
+    "spd": 16,
+    "mag": 18,
+    "dex": 17,
+    "sta": 15
+  },
+  {
+    "name": "Bison",
+    "cls": "Heavy Infantry",
+    "lp": 15,
+    "str": 17,
+    "spd": 11,
+    "mag": 16,
+    "dex": 12,
+    "sta": 21
+  },
+  {
+    "name": "Bokuden",
+    "cls": "Levante Guard",
+    "lp": 15,
+    "str": 16,
+    "spd": 22,
+    "mag": 14,
+    "dex": 12,
+    "sta": 11
+  },
+  {
+    "name": "Breezia",
+    "cls": "Iris",
+    "lp": 7,
+    "str": 10,
+    "spd": 20,
+    "mag": 23,
+    "dex": 17,
+    "sta": 10
+  },
+  {
+    "name": "Bruiser",
+    "cls": "Martial Artist",
+    "lp": 14,
+    "str": 19,
+    "spd": 15,
+    "mag": 10,
+    "dex": 11,
+    "sta": 24
+  },
+  {
+    "name": "Bruni",
+    "cls": "Mole",
+    "lp": 12,
+    "str": 11,
+    "spd": 12,
+    "mag": 18,
+    "dex": 23,
+    "sta": 21
+  },
+  {
+    "name": "Bukou",
+    "cls": "Amazon",
+    "lp": 13,
+    "str": 16,
+    "spd": 15,
+    "mag": 14,
+    "dex": 17,
+    "sta": 20
+  },
+  {
+    "name": "Canopus",
+    "cls": "Freelance Mage",
+    "lp": 6,
+    "str": 12,
+    "spd": 18,
+    "mag": 19,
+    "dex": 15,
+    "sta": 15
+  },
+  {
+    "name": "Capricorn",
+    "cls": "Court Mage",
+    "lp": 9,
+    "str": 12,
+    "spd": 13,
+    "mag": 19,
+    "dex": 16,
+    "sta": 12
+  },
+  {
+    "name": "Cat",
+    "cls": "Vagabond",
+    "lp": 9,
+    "str": 15,
+    "spd": 22,
+    "mag": 13,
+    "dex": 18,
+    "sta": 12
+  },
+  {
+    "name": "Catherine",
+    "cls": "Ranger",
+    "lp": 7,
+    "str": 13,
+    "spd": 15,
+    "mag": 15,
+    "dex": 22,
+    "sta": 14
+  },
+  {
+    "name": "Ceres",
+    "cls": "Imperial Guard",
+    "lp": 13,
+    "str": 22,
+    "spd": 13,
+    "mag": 15,
+    "dex": 10,
+    "sta": 16
+  },
+  {
+    "name": "Charles",
+    "cls": "Ranger",
+    "lp": 10,
+    "str": 15,
+    "spd": 15,
+    "mag": 13,
+    "dex": 20,
+    "sta": 14
+  },
+  {
+    "name": "Cherno",
+    "cls": "Mole",
+    "lp": 15,
+    "str": 11,
+    "spd": 12,
+    "mag": 18,
+    "dex": 21,
+    "sta": 21
+  },
+  {
+    "name": "Christoph",
+    "cls": "Crusader",
+    "lp": 14,
+    "str": 21,
+    "spd": 12,
+    "mag": 15,
+    "dex": 12,
+    "sta": 20
+  },
+  {
+    "name": "Cloudia",
+    "cls": "Iris",
+    "lp": 6,
+    "str": 10,
+    "spd": 24,
+    "mag": 21,
+    "dex": 18,
+    "sta": 10
+  },
+  {
+    "name": "Coppelia",
+    "cls": "Doll",
+    "lp": 99,
+    "str": 20,
+    "spd": 20,
+    "mag": 15,
+    "dex": 20,
+    "sta": 20
+  },
+  {
+    "name": "Crow",
+    "cls": "Vagabond",
+    "lp": 9,
+    "str": 16,
+    "spd": 21,
+    "mag": 13,
+    "dex": 18,
+    "sta": 14
+  },
+  {
+    "name": "Crux",
+    "cls": "Court Mage",
+    "lp": 10,
+    "str": 11,
+    "spd": 15,
+    "mag": 20,
+    "dex": 17,
+    "sta": 11
+  },
+  {
+    "name": "Cygnus",
+    "cls": "Court Mage",
+    "lp": 13,
+    "str": 13,
+    "spd": 12,
+    "mag": 21,
+    "dex": 18,
+    "sta": 12
+  },
+  {
+    "name": "Daisy",
+    "cls": "Freelance Mage",
+    "lp": 10,
+    "str": 11,
+    "spd": 19,
+    "mag": 18,
+    "dex": 17,
+    "sta": 13
+  },
+  {
+    "name": "Dandan",
+    "cls": "Desert Guard",
+    "lp": 14,
+    "str": 18,
+    "spd": 12,
+    "mag": 18,
+    "dex": 15,
+    "sta": 18
+  },
+  {
+    "name": "Danio",
+    "cls": "Dancer",
+    "lp": 10,
+    "str": 15,
+    "spd": 25,
+    "mag": 17,
+    "dex": 22,
+    "sta": 15
+  },
+  {
+    "name": "Davout",
+    "cls": "Imperial Guard",
+    "lp": 12,
+    "str": 22,
+    "spd": 14,
+    "mag": 12,
+    "dex": 10,
+    "sta": 19
+  },
+  {
+    "name": "Dayan",
+    "cls": "Nomad",
+    "lp": 11,
+    "str": 18,
+    "spd": 15,
+    "mag": 17,
+    "dex": 18,
+    "sta": 13
+  },
+  {
+    "name": "Debbie",
+    "cls": "Diver",
+    "lp": 11,
+    "str": 17,
+    "spd": 19,
+    "mag": 17,
+    "dex": 15,
+    "sta": 19
+  },
+  {
+    "name": "Deianira",
+    "cls": "Mercenary",
+    "lp": 10,
+    "str": 19,
+    "spd": 14,
+    "mag": 14,
+    "dex": 16,
+    "sta": 18
+  },
+  {
+    "name": "Deidamia",
+    "cls": "Mercenary",
+    "lp": 14,
+    "str": 19,
+    "spd": 14,
+    "mag": 15,
+    "dex": 16,
+    "sta": 17
+  },
+  {
+    "name": "Diana",
+    "cls": "Imperial Guard",
+    "lp": 15,
+    "str": 22,
+    "spd": 11,
+    "mag": 16,
+    "dex": 11,
+    "sta": 18
+  },
+  {
+    "name": "Drake",
+    "cls": "Armed Merchant",
+    "lp": 15,
+    "str": 18,
+    "spd": 22,
+    "mag": 10,
+    "dex": 16,
+    "sta": 15
+  },
+  {
+    "name": "Dwight",
+    "cls": "Light Infantry",
+    "lp": 8,
+    "str": 17,
+    "spd": 16,
+    "mag": 13,
+    "dex": 18,
+    "sta": 17
+  },
+  {
+    "name": "Dynamite",
+    "cls": "Martial Artist",
+    "lp": 28,
+    "str": 18,
+    "spd": 16,
+    "mag": 10,
+    "dex": 12,
+    "sta": 21
+  },
+  {
+    "name": "Edward",
+    "cls": "Ranger",
+    "lp": 10,
+    "str": 16,
+    "spd": 17,
+    "mag": 11,
+    "dex": 20,
+    "sta": 15
+  },
+  {
+    "name": "Eire",
+    "cls": "Iris",
+    "lp": 8,
+    "str": 10,
+    "spd": 21,
+    "mag": 24,
+    "dex": 17,
+    "sta": 10
+  },
+  {
+    "name": "Eitri",
+    "cls": "Imperial Blacksmith",
+    "lp": 11,
+    "str": 22,
+    "spd": 15,
+    "mag": 12,
+    "dex": 20,
+    "sta": 18
+  },
+  {
+    "name": "Ekaterina",
+    "cls": "Amazon",
+    "lp": 15,
+    "str": 14,
+    "spd": 16,
+    "mag": 15,
+    "dex": 18,
+    "sta": 21
+  },
+  {
+    "name": "Elizabeth",
+    "cls": "Ranger",
+    "lp": 8,
+    "str": 13,
+    "spd": 13,
+    "mag": 15,
+    "dex": 22,
+    "sta": 15
+  },
+  {
+    "name": "Emerald",
+    "cls": "Court Mage",
+    "lp": 10,
+    "str": 10,
+    "spd": 16,
+    "mag": 20,
+    "dex": 17,
+    "sta": 10
+  },
+  {
+    "name": "Epaminondas",
+    "cls": "Imperial Guard",
+    "lp": 11,
+    "str": 22,
+    "spd": 12,
+    "mag": 12,
+    "dex": 13,
+    "sta": 17
+  },
+  {
+    "name": "Falcon",
+    "cls": "Vagabond",
+    "lp": 10,
+    "str": 15,
+    "spd": 21,
+    "mag": 13,
+    "dex": 17,
+    "sta": 13
+  },
+  {
+    "name": "Fatima",
+    "cls": "Nomad",
+    "lp": 8,
+    "str": 15,
+    "spd": 17,
+    "mag": 18,
+    "dex": 18,
+    "sta": 13
+  },
+  {
+    "name": "Ferdinand",
+    "cls": "Heavy Infantry",
+    "lp": 10,
+    "str": 15,
+    "spd": 10,
+    "mag": 16,
+    "dex": 13,
+    "sta": 23
+  },
+  {
+    "name": "Ferret",
+    "cls": "Vagabond",
+    "lp": 9,
+    "str": 15,
+    "spd": 19,
+    "mag": 14,
+    "dex": 18,
+    "sta": 11
+  },
+  {
+    "name": "Final Emperor",
+    "cls": "Final Emperor",
+    "lp": 19,
+    "str": 25,
+    "spd": 24,
+    "mag": 23,
+    "dex": 23,
+    "sta": 21
+  },
+  {
+    "name": "Final Empress",
+    "cls": "Final Emperor",
+    "lp": 10,
+    "str": 23,
+    "spd": 25,
+    "mag": 24,
+    "dex": 24,
+    "sta": 20
+  },
+  {
+    "name": "Fisher",
+    "cls": "Armed Merchant",
+    "lp": 13,
+    "str": 18,
+    "spd": 20,
+    "mag": 12,
+    "dex": 14,
+    "sta": 17
+  },
+  {
+    "name": "Fox",
+    "cls": "Vagabond",
+    "lp": 8,
+    "str": 13,
+    "spd": 19,
+    "mag": 16,
+    "dex": 20,
+    "sta": 10
+  },
+  {
+    "name": "Franklin",
+    "cls": "Light Infantry",
+    "lp": 13,
+    "str": 18,
+    "spd": 18,
+    "mag": 13,
+    "dex": 15,
+    "sta": 17
+  },
+  {
+    "name": "Friedrich",
+    "cls": "Ranger",
+    "lp": 15,
+    "str": 14,
+    "spd": 16,
+    "mag": 13,
+    "dex": 21,
+    "sta": 15
+  },
+  {
+    "name": "Fritz",
+    "cls": "Martial Artist",
+    "lp": 14,
+    "str": 19,
+    "spd": 15,
+    "mag": 10,
+    "dex": 11,
+    "sta": 22
+  },
+  {
+    "name": "Fury",
+    "cls": "Imperial Guard",
+    "lp": 11,
+    "str": 19,
+    "spd": 11,
+    "mag": 18,
+    "dex": 13,
+    "sta": 16
+  },
+  {
+    "name": "Fuyo",
+    "cls": "Ninja",
+    "lp": 8,
+    "str": 21,
+    "spd": 22,
+    "mag": 14,
+    "dex": 22,
+    "sta": 10
+  },
+  {
+    "name": "Gaile",
+    "cls": "Iris",
+    "lp": 6,
+    "str": 10,
+    "spd": 22,
+    "mag": 23,
+    "dex": 18,
+    "sta": 10
+  },
+  {
+    "name": "Galatea",
+    "cls": "Nereid",
+    "lp": 9,
+    "str": 10,
+    "spd": 20,
+    "mag": 19,
+    "dex": 24,
+    "sta": 10
+  },
+  {
+    "name": "Galdan",
+    "cls": "Nomad",
+    "lp": 11,
+    "str": 18,
+    "spd": 16,
+    "mag": 15,
+    "dex": 17,
+    "sta": 14
+  },
+  {
+    "name": "Galunggung",
+    "cls": "Salamander",
+    "lp": 11,
+    "str": 22,
+    "spd": 12,
+    "mag": 18,
+    "dex": 10,
+    "sta": 21
+  },
+  {
+    "name": "Gama",
+    "cls": "Armed Merchant",
+    "lp": 14,
+    "str": 17,
+    "spd": 22,
+    "mag": 12,
+    "dex": 15,
+    "sta": 15
+  },
+  {
+    "name": "Ganryu",
+    "cls": "Levante Guard",
+    "lp": 10,
+    "str": 18,
+    "spd": 21,
+    "mag": 11,
+    "dex": 10,
+    "sta": 11
+  },
+  {
+    "name": "Garnet",
+    "cls": "Court Mage",
+    "lp": 8,
+    "str": 11,
+    "spd": 15,
+    "mag": 21,
+    "dex": 16,
+    "sta": 11
+  },
+  {
+    "name": "Gemini",
+    "cls": "Court Mage",
+    "lp": 10,
+    "str": 11,
+    "spd": 14,
+    "mag": 20,
+    "dex": 17,
+    "sta": 13
+  },
+  {
+    "name": "Georg",
+    "cls": "Crusader",
+    "lp": 14,
+    "str": 21,
+    "spd": 11,
+    "mag": 16,
+    "dex": 13,
+    "sta": 18
+  },
+  {
+    "name": "Gerard",
+    "cls": "Emperor",
+    "lp": 16,
+    "str": 17,
+    "spd": 20,
+    "mag": 19,
+    "dex": 22,
+    "sta": 11
+  },
+  {
+    "name": "Gerard",
+    "cls": "2nd Prince",
+    "lp": 16,
+    "str": 17,
+    "spd": 20,
+    "mag": 19,
+    "dex": 22,
+    "sta": 11
+  },
+  {
+    "name": "Gertrude",
+    "cls": "Crusader",
+    "lp": 13,
+    "str": 14,
+    "spd": 13,
+    "mag": 22,
+    "dex": 11,
+    "sta": 11
+  },
+  {
+    "name": "Gley",
+    "cls": "Mole",
+    "lp": 11,
+    "str": 12,
+    "spd": 12,
+    "mag": 17,
+    "dex": 22,
+    "sta": 20
+  },
+  {
+    "name": "Grace",
+    "cls": "Light Infantry",
+    "lp": 12,
+    "str": 18,
+    "spd": 17,
+    "mag": 15,
+    "dex": 15,
+    "sta": 17
+  },
+  {
+    "name": "Greta",
+    "cls": "Light Infantry",
+    "lp": 9,
+    "str": 17,
+    "spd": 17,
+    "mag": 15,
+    "dex": 15,
+    "sta": 16
+  },
+  {
+    "name": "Gustav",
+    "cls": "Imperial Guard",
+    "lp": 13,
+    "str": 24,
+    "spd": 11,
+    "mag": 10,
+    "dex": 10,
+    "sta": 20
+  },
+  {
+    "name": "Hamba",
+    "cls": "Hunter",
+    "lp": 10,
+    "str": 12,
+    "spd": 14,
+    "mag": 10,
+    "dex": 24,
+    "sta": 15
+  },
+  {
+    "name": "Hannibal",
+    "cls": "Imperial Guard",
+    "lp": 15,
+    "str": 25,
+    "spd": 11,
+    "mag": 11,
+    "dex": 12,
+    "sta": 18
+  },
+  {
+    "name": "Harry",
+    "cls": "Light Infantry",
+    "lp": 11,
+    "str": 18,
+    "spd": 15,
+    "mag": 16,
+    "dex": 16,
+    "sta": 16
+  },
+  {
+    "name": "Hase",
+    "cls": "Martial Artist",
+    "lp": 19,
+    "str": 17,
+    "spd": 16,
+    "mag": 11,
+    "dex": 13,
+    "sta": 23
+  },
+  {
+    "name": "Hazel",
+    "cls": "Freelance Mage",
+    "lp": 7,
+    "str": 11,
+    "spd": 16,
+    "mag": 20,
+    "dex": 17,
+    "sta": 13
+  },
+  {
+    "name": "Hector",
+    "cls": "Mercenary",
+    "lp": 13,
+    "str": 21,
+    "spd": 16,
+    "mag": 12,
+    "dex": 14,
+    "sta": 18
+  },
+  {
+    "name": "Hedgehog",
+    "cls": "Heavy Infantry",
+    "lp": 11,
+    "str": 18,
+    "spd": 11,
+    "mag": 16,
+    "dex": 12,
+    "sta": 22
+  },
+  {
+    "name": "Henrique",
+    "cls": "Armed Merchant",
+    "lp": 13,
+    "str": 17,
+    "spd": 21,
+    "mag": 12,
+    "dex": 16,
+    "sta": 15
+  },
+  {
+    "name": "Henry",
+    "cls": "Ranger",
+    "lp": 12,
+    "str": 13,
+    "spd": 16,
+    "mag": 13,
+    "dex": 22,
+    "sta": 15
+  },
+  {
+    "name": "Herbert",
+    "cls": "Light Infantry",
+    "lp": 10,
+    "str": 18,
+    "spd": 17,
+    "mag": 14,
+    "dex": 16,
+    "sta": 17
+  },
+  {
+    "name": "Hercules",
+    "cls": "Mercenary",
+    "lp": 11,
+    "str": 20,
+    "spd": 14,
+    "mag": 14,
+    "dex": 17,
+    "sta": 16
+  },
+  {
+    "name": "Hippolyte",
+    "cls": "Mercenary",
+    "lp": 12,
+    "str": 18,
+    "spd": 13,
+    "mag": 17,
+    "dex": 15,
+    "sta": 18
+  },
+  {
+    "name": "Ingrid",
+    "cls": "Light Infantry",
+    "lp": 8,
+    "str": 17,
+    "spd": 16,
+    "mag": 15,
+    "dex": 16,
+    "sta": 18
+  },
+  {
+    "name": "Iris",
+    "cls": "Freelance Mage",
+    "lp": 9,
+    "str": 10,
+    "spd": 15,
+    "mag": 22,
+    "dex": 15,
+    "sta": 12
+  },
+  {
+    "name": "Isabella",
+    "cls": "Ranger",
+    "lp": 7,
+    "str": 14,
+    "spd": 14,
+    "mag": 19,
+    "dex": 21,
+    "sta": 12
+  },
+  {
+    "name": "Ivy",
+    "cls": "Freelance Mage",
+    "lp": 8,
+    "str": 10,
+    "spd": 18,
+    "mag": 19,
+    "dex": 17,
+    "sta": 11
+  },
+  {
+    "name": "Jacob",
+    "cls": "Crusader",
+    "lp": 12,
+    "str": 21,
+    "spd": 13,
+    "mag": 15,
+    "dex": 13,
+    "sta": 18
+  },
+  {
+    "name": "James",
+    "cls": "Light Infantry",
+    "lp": 13,
+    "str": 16,
+    "spd": 17,
+    "mag": 13,
+    "dex": 15,
+    "sta": 18
+  },
+  {
+    "name": "Jason",
+    "cls": "Mercenary",
+    "lp": 11,
+    "str": 19,
+    "spd": 15,
+    "mag": 14,
+    "dex": 16,
+    "sta": 17
+  },
+  {
+    "name": "Jeanne",
+    "cls": "Amazon",
+    "lp": 11,
+    "str": 17,
+    "spd": 17,
+    "mag": 13,
+    "dex": 19,
+    "sta": 19
+  },
+  {
+    "name": "Jessica",
+    "cls": "Light Infantry",
+    "lp": 8,
+    "str": 16,
+    "spd": 14,
+    "mag": 17,
+    "dex": 18,
+    "sta": 16
+  },
+  {
+    "name": "John",
+    "cls": "Light Infantry",
+    "lp": 13,
+    "str": 16,
+    "spd": 18,
+    "mag": 14,
+    "dex": 15,
+    "sta": 17
+  },
+  {
+    "name": "Jubei",
+    "cls": "Levante Guard",
+    "lp": 12,
+    "str": 18,
+    "spd": 21,
+    "mag": 11,
+    "dex": 14,
+    "sta": 13
+  },
+  {
+    "name": "Judy",
+    "cls": "Light Infantry",
+    "lp": 10,
+    "str": 17,
+    "spd": 18,
+    "mag": 16,
+    "dex": 15,
+    "sta": 18
+  },
+  {
+    "name": "Juliana",
+    "cls": "Ranger",
+    "lp": 11,
+    "str": 12,
+    "spd": 13,
+    "mag": 14,
+    "dex": 23,
+    "sta": 15
+  },
+  {
+    "name": "Juno",
+    "cls": "Imperial Guard",
+    "lp": 10,
+    "str": 23,
+    "spd": 11,
+    "mag": 15,
+    "dex": 10,
+    "sta": 17
+  },
+  {
+    "name": "Karl",
+    "cls": "Martial Artist",
+    "lp": 16,
+    "str": 17,
+    "spd": 14,
+    "mag": 11,
+    "dex": 14,
+    "sta": 23
+  },
+  {
+    "name": "Kate",
+    "cls": "Diver",
+    "lp": 9,
+    "str": 14,
+    "spd": 20,
+    "mag": 18,
+    "dex": 17,
+    "sta": 17
+  },
+  {
+    "name": "Kriemhild",
+    "cls": "Amazon",
+    "lp": 8,
+    "str": 15,
+    "spd": 18,
+    "mag": 12,
+    "dex": 20,
+    "sta": 18
+  },
+  {
+    "name": "Kwawa",
+    "cls": "Hunter",
+    "lp": 12,
+    "str": 11,
+    "spd": 13,
+    "mag": 12,
+    "dex": 22,
+    "sta": 16
+  },
+  {
+    "name": "Lato",
+    "cls": "Mole",
+    "lp": 14,
+    "str": 11,
+    "spd": 11,
+    "mag": 20,
+    "dex": 20,
+    "sta": 22
+  },
+  {
+    "name": "Lego",
+    "cls": "Mole",
+    "lp": 13,
+    "str": 12,
+    "spd": 10,
+    "mag": 19,
+    "dex": 22,
+    "sta": 20
+  },
+  {
+    "name": "Leon",
+    "cls": "Emperor",
+    "lp": 19,
+    "str": 19,
+    "spd": 14,
+    "mag": 20,
+    "dex": 17,
+    "sta": 20
+  },
+  {
+    "name": "Libra",
+    "cls": "Court Mage",
+    "lp": 8,
+    "str": 11,
+    "spd": 12,
+    "mag": 23,
+    "dex": 16,
+    "sta": 11
+  },
+  {
+    "name": "Licorice",
+    "cls": "Dancer",
+    "lp": 8,
+    "str": 14,
+    "spd": 22,
+    "mag": 19,
+    "dex": 23,
+    "sta": 14
+  },
+  {
+    "name": "Liger",
+    "cls": "Martial Artist",
+    "lp": 13,
+    "str": 18,
+    "spd": 18,
+    "mag": 10,
+    "dex": 14,
+    "sta": 19
+  },
+  {
+    "name": "Lily",
+    "cls": "Freelance Mage",
+    "lp": 8,
+    "str": 10,
+    "spd": 16,
+    "mag": 20,
+    "dex": 18,
+    "sta": 12
+  },
+  {
+    "name": "Linda",
+    "cls": "Diver",
+    "lp": 8,
+    "str": 14,
+    "spd": 18,
+    "mag": 14,
+    "dex": 17,
+    "sta": 17
+  },
+  {
+    "name": "Liza",
+    "cls": "Light Infantry",
+    "lp": 11,
+    "str": 16,
+    "spd": 16,
+    "mag": 16,
+    "dex": 16,
+    "sta": 17
+  },
+  {
+    "name": "Loricaria",
+    "cls": "Dancer",
+    "lp": 9,
+    "str": 12,
+    "spd": 23,
+    "mag": 19,
+    "dex": 24,
+    "sta": 13
+  },
+  {
+    "name": "Louis",
+    "cls": "Ranger",
+    "lp": 11,
+    "str": 14,
+    "spd": 15,
+    "mag": 14,
+    "dex": 21,
+    "sta": 15
+  },
+  {
+    "name": "Luna",
+    "cls": "Imperial Guard",
+    "lp": 14,
+    "str": 21,
+    "spd": 12,
+    "mag": 18,
+    "dex": 10,
+    "sta": 16
+  },
+  {
+    "name": "Lysianassa",
+    "cls": "Nereid",
+    "lp": 9,
+    "str": 10,
+    "spd": 22,
+    "mag": 18,
+    "dex": 23,
+    "sta": 10
+  },
+  {
+    "name": "Magdalena",
+    "cls": "Crusader",
+    "lp": 14,
+    "str": 13,
+    "spd": 11,
+    "mag": 22,
+    "dex": 14,
+    "sta": 12
+  },
+  {
+    "name": "Magellan",
+    "cls": "Armed Merchant",
+    "lp": 12,
+    "str": 18,
+    "spd": 20,
+    "mag": 13,
+    "dex": 14,
+    "sta": 17
+  },
+  {
+    "name": "Magnolia",
+    "cls": "Freelance Mage",
+    "lp": 11,
+    "str": 13,
+    "spd": 17,
+    "mag": 19,
+    "dex": 18,
+    "sta": 14
+  },
+  {
+    "name": "Mahan",
+    "cls": "Armed Merchant",
+    "lp": 11,
+    "str": 17,
+    "spd": 20,
+    "mag": 11,
+    "dex": 17,
+    "sta": 16
+  },
+  {
+    "name": "Mariah",
+    "cls": "Diver",
+    "lp": 6,
+    "str": 16,
+    "spd": 18,
+    "mag": 19,
+    "dex": 14,
+    "sta": 19
+  },
+  {
+    "name": "Mariah",
+    "cls": "Crusader",
+    "lp": 12,
+    "str": 13,
+    "spd": 12,
+    "mag": 23,
+    "dex": 11,
+    "sta": 13
+  },
+  {
+    "name": "Marlborough",
+    "cls": "Imperial Guard",
+    "lp": 14,
+    "str": 23,
+    "spd": 13,
+    "mag": 13,
+    "dex": 11,
+    "sta": 18
+  },
+  {
+    "name": "Mary",
+    "cls": "Ranger",
+    "lp": 8,
+    "str": 15,
+    "spd": 15,
+    "mag": 14,
+    "dex": 21,
+    "sta": 13
+  },
+  {
+    "name": "Marzawan",
+    "cls": "Desert Guard",
+    "lp": 12,
+    "str": 20,
+    "spd": 14,
+    "mag": 16,
+    "dex": 12,
+    "sta": 18
+  },
+  {
+    "name": "Matilda",
+    "cls": "Crusader",
+    "lp": 12,
+    "str": 14,
+    "spd": 13,
+    "mag": 21,
+    "dex": 12,
+    "sta": 13
+  },
+  {
+    "name": "Medea",
+    "cls": "Mercenary",
+    "lp": 15,
+    "str": 19,
+    "spd": 14,
+    "mag": 14,
+    "dex": 16,
+    "sta": 17
+  },
+  {
+    "name": "Melite",
+    "cls": "Nereid",
+    "lp": 7,
+    "str": 10,
+    "spd": 21,
+    "mag": 17,
+    "dex": 22,
+    "sta": 10
+  },
+  {
+    "name": "Merapi",
+    "cls": "Salamander",
+    "lp": 12,
+    "str": 21,
+    "spd": 10,
+    "mag": 16,
+    "dex": 11,
+    "sta": 22
+  },
+  {
+    "name": "Minerva",
+    "cls": "Imperial Guard",
+    "lp": 11,
+    "str": 20,
+    "spd": 10,
+    "mag": 17,
+    "dex": 12,
+    "sta": 17
+  },
+  {
+    "name": "Mizuki",
+    "cls": "Ninja",
+    "lp": 13,
+    "str": 17,
+    "spd": 19,
+    "mag": 18,
+    "dex": 15,
+    "sta": 15
+  },
+  {
+    "name": "Momiji",
+    "cls": "Ninja",
+    "lp": 10,
+    "str": 18,
+    "spd": 20,
+    "mag": 15,
+    "dex": 17,
+    "sta": 13
+  },
+  {
+    "name": "Monica",
+    "cls": "Crusader",
+    "lp": 8,
+    "str": 12,
+    "spd": 11,
+    "mag": 23,
+    "dex": 12,
+    "sta": 12
+  },
+  {
+    "name": "Mouse",
+    "cls": "Vagabond",
+    "lp": 9,
+    "str": 13,
+    "spd": 18,
+    "mag": 17,
+    "dex": 18,
+    "sta": 11
+  },
+  {
+    "name": "Mudyug",
+    "cls": "Hunter",
+    "lp": 11,
+    "str": 13,
+    "spd": 15,
+    "mag": 11,
+    "dex": 24,
+    "sta": 14
+  },
+  {
+    "name": "Nadire",
+    "cls": "Iris",
+    "lp": 9,
+    "str": 10,
+    "spd": 23,
+    "mag": 23,
+    "dex": 20,
+    "sta": 10
+  },
+  {
+    "name": "Natalie",
+    "cls": "Diver",
+    "lp": 8,
+    "str": 15,
+    "spd": 19,
+    "mag": 18,
+    "dex": 16,
+    "sta": 17
+  },
+  {
+    "name": "Nausithoe",
+    "cls": "Nereid",
+    "lp": 9,
+    "str": 10,
+    "spd": 21,
+    "mag": 17,
+    "dex": 25,
+    "sta": 10
+  },
+  {
+    "name": "Nazuna",
+    "cls": "Ninja",
+    "lp": 7,
+    "str": 20,
+    "spd": 22,
+    "mag": 16,
+    "dex": 20,
+    "sta": 13
+  },
+  {
+    "name": "Numan",
+    "cls": "Desert Guard",
+    "lp": 11,
+    "str": 20,
+    "spd": 12,
+    "mag": 16,
+    "dex": 13,
+    "sta": 19
+  },
+  {
+    "name": "Olivia",
+    "cls": "Diver",
+    "lp": 6,
+    "str": 15,
+    "spd": 18,
+    "mag": 16,
+    "dex": 16,
+    "sta": 18
+  },
+  {
+    "name": "Onyx",
+    "cls": "Court Mage",
+    "lp": 11,
+    "str": 10,
+    "spd": 16,
+    "mag": 20,
+    "dex": 18,
+    "sta": 11
+  },
+  {
+    "name": "Opal",
+    "cls": "Court Mage",
+    "lp": 12,
+    "str": 11,
+    "spd": 16,
+    "mag": 20,
+    "dex": 17,
+    "sta": 11
+  },
+  {
+    "name": "Orban",
+    "cls": "Crusader",
+    "lp": 12,
+    "str": 21,
+    "spd": 14,
+    "mag": 15,
+    "dex": 12,
+    "sta": 17
+  },
+  {
+    "name": "Orion",
+    "cls": "Mercenary",
+    "lp": 11,
+    "str": 20,
+    "spd": 17,
+    "mag": 13,
+    "dex": 15,
+    "sta": 16
+  },
+  {
+    "name": "Osei",
+    "cls": "Hunter",
+    "lp": 9,
+    "str": 14,
+    "spd": 14,
+    "mag": 11,
+    "dex": 22,
+    "sta": 16
+  },
+  {
+    "name": "Papandjar",
+    "cls": "Salamander",
+    "lp": 14,
+    "str": 21,
+    "spd": 14,
+    "mag": 18,
+    "dex": 10,
+    "sta": 21
+  },
+  {
+    "name": "Paul",
+    "cls": "Crusader",
+    "lp": 15,
+    "str": 22,
+    "spd": 12,
+    "mag": 15,
+    "dex": 12,
+    "sta": 19
+  },
+  {
+    "name": "Penelope",
+    "cls": "Mercenary",
+    "lp": 11,
+    "str": 20,
+    "spd": 13,
+    "mag": 14,
+    "dex": 16,
+    "sta": 19
+  },
+  {
+    "name": "Perseus",
+    "cls": "Mercenary",
+    "lp": 11,
+    "str": 18,
+    "spd": 17,
+    "mag": 13,
+    "dex": 16,
+    "sta": 16
+  },
+  {
+    "name": "Peter",
+    "cls": "Crusader",
+    "lp": 13,
+    "str": 20,
+    "spd": 13,
+    "mag": 15,
+    "dex": 14,
+    "sta": 17
+  },
+  {
+    "name": "Pherusa",
+    "cls": "Nereid",
+    "lp": 9,
+    "str": 10,
+    "spd": 20,
+    "mag": 17,
+    "dex": 21,
+    "sta": 10
+  },
+  {
+    "name": "Philip",
+    "cls": "Ranger",
+    "lp": 12,
+    "str": 15,
+    "spd": 14,
+    "mag": 14,
+    "dex": 21,
+    "sta": 16
+  },
+  {
+    "name": "Pigeon",
+    "cls": "Vagabond",
+    "lp": 11,
+    "str": 16,
+    "spd": 20,
+    "mag": 11,
+    "dex": 18,
+    "sta": 16
+  },
+  {
+    "name": "Pod",
+    "cls": "Mole",
+    "lp": 12,
+    "str": 10,
+    "spd": 11,
+    "mag": 17,
+    "dex": 22,
+    "sta": 21
+  },
+  {
+    "name": "Polaris",
+    "cls": "Freelance Mage",
+    "lp": 10,
+    "str": 11,
+    "spd": 16,
+    "mag": 21,
+    "dex": 16,
+    "sta": 16
+  },
+  {
+    "name": "Procyon",
+    "cls": "Freelance Mage",
+    "lp": 8,
+    "str": 10,
+    "spd": 17,
+    "mag": 20,
+    "dex": 16,
+    "sta": 15
+  },
+  {
+    "name": "Qadhakhum",
+    "cls": "Hunter",
+    "lp": 12,
+    "str": 12,
+    "spd": 14,
+    "mag": 10,
+    "dex": 25,
+    "sta": 14
+  },
+  {
+    "name": "Rabbit",
+    "cls": "Vagabond",
+    "lp": 7,
+    "str": 14,
+    "spd": 21,
+    "mag": 13,
+    "dex": 17,
+    "sta": 10
+  },
+  {
+    "name": "Rangali",
+    "cls": "Hunter",
+    "lp": 10,
+    "str": 15,
+    "spd": 13,
+    "mag": 11,
+    "dex": 21,
+    "sta": 14
+  },
+  {
+    "name": "Regulus",
+    "cls": "Freelance Mage",
+    "lp": 10,
+    "str": 12,
+    "spd": 17,
+    "mag": 20,
+    "dex": 15,
+    "sta": 15
+  },
+  {
+    "name": "Renya",
+    "cls": "Levante Guard",
+    "lp": 13,
+    "str": 19,
+    "spd": 21,
+    "mag": 12,
+    "dex": 14,
+    "sta": 10
+  },
+  {
+    "name": "Rhino",
+    "cls": "Heavy Infantry",
+    "lp": 13,
+    "str": 16,
+    "spd": 13,
+    "mag": 15,
+    "dex": 14,
+    "sta": 21
+  },
+  {
+    "name": "Richard",
+    "cls": "Light Infantry",
+    "lp": 8,
+    "str": 17,
+    "spd": 19,
+    "mag": 12,
+    "dex": 15,
+    "sta": 16
+  },
+  {
+    "name": "Rigel",
+    "cls": "Freelance Mage",
+    "lp": 9,
+    "str": 11,
+    "spd": 16,
+    "mag": 18,
+    "dex": 18,
+    "sta": 14
+  },
+  {
+    "name": "Robin",
+    "cls": "Vagabond",
+    "lp": 13,
+    "str": 15,
+    "spd": 19,
+    "mag": 13,
+    "dex": 19,
+    "sta": 15
+  },
+  {
+    "name": "Ronald",
+    "cls": "Light Infantry",
+    "lp": 9,
+    "str": 17,
+    "spd": 18,
+    "mag": 14,
+    "dex": 15,
+    "sta": 18
+  },
+  {
+    "name": "Rose",
+    "cls": "Freelance Mage",
+    "lp": 7,
+    "str": 11,
+    "spd": 17,
+    "mag": 19,
+    "dex": 17,
+    "sta": 13
+  },
+  {
+    "name": "Ruby",
+    "cls": "Court Mage",
+    "lp": 10,
+    "str": 11,
+    "spd": 16,
+    "mag": 22,
+    "dex": 18,
+    "sta": 10
+  },
+  {
+    "name": "Sagittarius",
+    "cls": "Court Mage",
+    "lp": 12,
+    "str": 10,
+    "spd": 14,
+    "mag": 19,
+    "dex": 19,
+    "sta": 10
+  },
+  {
+    "name": "Sao",
+    "cls": "Nereid",
+    "lp": 7,
+    "str": 10,
+    "spd": 22,
+    "mag": 18,
+    "dex": 21,
+    "sta": 10
+  },
+  {
+    "name": "Sapphire",
+    "cls": "Court Mage",
+    "lp": 12,
+    "str": 13,
+    "spd": 17,
+    "mag": 18,
+    "dex": 17,
+    "sta": 12
+  },
+  {
+    "name": "Sarah",
+    "cls": "Diver",
+    "lp": 8,
+    "str": 16,
+    "spd": 17,
+    "mag": 18,
+    "dex": 14,
+    "sta": 18
+  },
+  {
+    "name": "Shahryar",
+    "cls": "Desert Guard",
+    "lp": 15,
+    "str": 19,
+    "spd": 13,
+    "mag": 16,
+    "dex": 13,
+    "sta": 19
+  },
+  {
+    "name": "Sharrkan",
+    "cls": "Desert Guard",
+    "lp": 12,
+    "str": 19,
+    "spd": 13,
+    "mag": 17,
+    "dex": 12,
+    "sta": 18
+  },
+  {
+    "name": "Shion",
+    "cls": "Ninja",
+    "lp": 11,
+    "str": 17,
+    "spd": 21,
+    "mag": 13,
+    "dex": 20,
+    "sta": 13
+  },
+  {
+    "name": "Shirley",
+    "cls": "Light Infantry",
+    "lp": 7,
+    "str": 17,
+    "spd": 17,
+    "mag": 16,
+    "dex": 15,
+    "sta": 18
+  },
+  {
+    "name": "Shusaku",
+    "cls": "Levante Guard",
+    "lp": 13,
+    "str": 16,
+    "spd": 21,
+    "mag": 12,
+    "dex": 15,
+    "sta": 10
+  },
+  {
+    "name": "Sidhe",
+    "cls": "Mercenary",
+    "lp": 10,
+    "str": 18,
+    "spd": 15,
+    "mag": 15,
+    "dex": 17,
+    "sta": 16
+  },
+  {
+    "name": "Siero",
+    "cls": "Mole",
+    "lp": 12,
+    "str": 10,
+    "spd": 11,
+    "mag": 18,
+    "dex": 21,
+    "sta": 22
+  },
+  {
+    "name": "Sirius",
+    "cls": "Freelance Mage",
+    "lp": 7,
+    "str": 11,
+    "spd": 16,
+    "mag": 19,
+    "dex": 17,
+    "sta": 16
+  },
+  {
+    "name": "Skya",
+    "cls": "Iris",
+    "lp": 8,
+    "str": 10,
+    "spd": 21,
+    "mag": 24,
+    "dex": 19,
+    "sta": 10
+  },
+  {
+    "name": "Snail",
+    "cls": "Heavy Infantry",
+    "lp": 12,
+    "str": 15,
+    "spd": 13,
+    "mag": 16,
+    "dex": 12,
+    "sta": 21
+  },
+  {
+    "name": "Sophia",
+    "cls": "Crusader",
+    "lp": 12,
+    "str": 12,
+    "spd": 12,
+    "mag": 24,
+    "dex": 11,
+    "sta": 12
+  },
+  {
+    "name": "Soputan",
+    "cls": "Salamander",
+    "lp": 11,
+    "str": 21,
+    "spd": 12,
+    "mag": 19,
+    "dex": 11,
+    "sta": 22
+  },
+  {
+    "name": "Souji",
+    "cls": "Levante Guard",
+    "lp": 1,
+    "str": 22,
+    "spd": 24,
+    "mag": 14,
+    "dex": 12,
+    "sta": 11
+  },
+  {
+    "name": "Sparrow",
+    "cls": "Vagabond",
+    "lp": 12,
+    "str": 15,
+    "spd": 19,
+    "mag": 12,
+    "dex": 19,
+    "sta": 15
+  },
+  {
+    "name": "Starling",
+    "cls": "Vagabond",
+    "lp": 10,
+    "str": 17,
+    "spd": 19,
+    "mag": 11,
+    "dex": 18,
+    "sta": 14
+  },
+  {
+    "name": "Stormie",
+    "cls": "Iris",
+    "lp": 7,
+    "str": 10,
+    "spd": 20,
+    "mag": 24,
+    "dex": 19,
+    "sta": 10
+  },
+  {
+    "name": "Suleyman",
+    "cls": "Desert Guard",
+    "lp": 13,
+    "str": 19,
+    "spd": 13,
+    "mag": 18,
+    "dex": 14,
+    "sta": 19
+  },
+  {
+    "name": "Swift",
+    "cls": "Vagabond",
+    "lp": 8,
+    "str": 16,
+    "spd": 20,
+    "mag": 12,
+    "dex": 17,
+    "sta": 15
+  },
+  {
+    "name": "Tambora",
+    "cls": "Salamander",
+    "lp": 12,
+    "str": 23,
+    "spd": 10,
+    "mag": 19,
+    "dex": 11,
+    "sta": 21
+  },
+  {
+    "name": "Tancred",
+    "cls": "Imperial Guard",
+    "lp": 13,
+    "str": 21,
+    "spd": 11,
+    "mag": 11,
+    "dex": 12,
+    "sta": 21
+  },
+  {
+    "name": "Taurus",
+    "cls": "Court Mage",
+    "lp": 11,
+    "str": 12,
+    "spd": 14,
+    "mag": 21,
+    "dex": 17,
+    "sta": 10
+  },
+  {
+    "name": "Terry",
+    "cls": "Martial Artist",
+    "lp": 13,
+    "str": 17,
+    "spd": 14,
+    "mag": 11,
+    "dex": 13,
+    "sta": 23
+  },
+  {
+    "name": "Tesshu",
+    "cls": "Levante Guard",
+    "lp": 14,
+    "str": 17,
+    "spd": 20,
+    "mag": 13,
+    "dex": 13,
+    "sta": 11
+  },
+  {
+    "name": "Theodora",
+    "cls": "Amazon",
+    "lp": 10,
+    "str": 17,
+    "spd": 18,
+    "mag": 12,
+    "dex": 19,
+    "sta": 17
+  },
+  {
+    "name": "Therese",
+    "cls": "Ranger",
+    "lp": 12,
+    "str": 13,
+    "spd": 16,
+    "mag": 15,
+    "dex": 20,
+    "sta": 14
+  },
+  {
+    "name": "Theseus",
+    "cls": "Mercenary",
+    "lp": 10,
+    "str": 20,
+    "spd": 16,
+    "mag": 13,
+    "dex": 14,
+    "sta": 17
+  },
+  {
+    "name": "Thetis",
+    "cls": "Nereid",
+    "lp": 8,
+    "str": 10,
+    "spd": 21,
+    "mag": 19,
+    "dex": 22,
+    "sta": 10
+  },
+  {
+    "name": "Thrush",
+    "cls": "Vagabond",
+    "lp": 7,
+    "str": 16,
+    "spd": 19,
+    "mag": 14,
+    "dex": 18,
+    "sta": 14
+  },
+  {
+    "name": "Tirpitz",
+    "cls": "Armed Merchant",
+    "lp": 9,
+    "str": 19,
+    "spd": 21,
+    "mag": 11,
+    "dex": 15,
+    "sta": 16
+  },
+  {
+    "name": "Tomoe",
+    "cls": "Amazon",
+    "lp": 14,
+    "str": 19,
+    "spd": 17,
+    "mag": 12,
+    "dex": 18,
+    "sta": 18
+  },
+  {
+    "name": "Topaz",
+    "cls": "Court Mage",
+    "lp": 10,
+    "str": 11,
+    "spd": 15,
+    "mag": 20,
+    "dex": 16,
+    "sta": 10
+  },
+  {
+    "name": "Tortoise",
+    "cls": "Heavy Infantry",
+    "lp": 12,
+    "str": 15,
+    "spd": 12,
+    "mag": 15,
+    "dex": 13,
+    "sta": 22
+  },
+  {
+    "name": "Toshi",
+    "cls": "Levante Guard",
+    "lp": 11,
+    "str": 20,
+    "spd": 20,
+    "mag": 13,
+    "dex": 12,
+    "sta": 12
+  },
+  {
+    "name": "Tsubaki",
+    "cls": "Ninja",
+    "lp": 11,
+    "str": 19,
+    "spd": 21,
+    "mag": 10,
+    "dex": 20,
+    "sta": 10
+  },
+  {
+    "name": "Ulysses",
+    "cls": "Mercenary",
+    "lp": 12,
+    "str": 21,
+    "spd": 16,
+    "mag": 13,
+    "dex": 15,
+    "sta": 17
+  },
+  {
+    "name": "Vader",
+    "cls": "Martial Artist",
+    "lp": 16,
+    "str": 23,
+    "spd": 10,
+    "mag": 10,
+    "dex": 10,
+    "sta": 25
+  },
+  {
+    "name": "Vai",
+    "cls": "Hunter",
+    "lp": 8,
+    "str": 13,
+    "spd": 13,
+    "mag": 10,
+    "dex": 23,
+    "sta": 15
+  },
+  {
+    "name": "Valentine",
+    "cls": "Crusader",
+    "lp": 15,
+    "str": 22,
+    "spd": 12,
+    "mag": 17,
+    "dex": 13,
+    "sta": 16
+  },
+  {
+    "name": "Vega",
+    "cls": "Freelance Mage",
+    "lp": 13,
+    "str": 12,
+    "spd": 17,
+    "mag": 22,
+    "dex": 14,
+    "sta": 15
+  },
+  {
+    "name": "Vertisol",
+    "cls": "Mole",
+    "lp": 13,
+    "str": 10,
+    "spd": 11,
+    "mag": 16,
+    "dex": 21,
+    "sta": 23
+  },
+  {
+    "name": "Victoria",
+    "cls": "Imperial Guard",
+    "lp": 10,
+    "str": 21,
+    "spd": 11,
+    "mag": 16,
+    "dex": 12,
+    "sta": 18
+  },
+  {
+    "name": "Wallenstein",
+    "cls": "Imperial Guard",
+    "lp": 12,
+    "str": 23,
+    "spd": 12,
+    "mag": 11,
+    "dex": 10,
+    "sta": 20
+  },
+  {
+    "name": "Walrus",
+    "cls": "Heavy Infantry",
+    "lp": 13,
+    "str": 16,
+    "spd": 10,
+    "mag": 14,
+    "dex": 14,
+    "sta": 23
+  },
+  {
+    "name": "Weasel",
+    "cls": "Vagabond",
+    "lp": 6,
+    "str": 13,
+    "spd": 20,
+    "mag": 15,
+    "dex": 18,
+    "sta": 10
+  },
+  {
+    "name": "William",
+    "cls": "Ranger",
+    "lp": 13,
+    "str": 13,
+    "spd": 16,
+    "mag": 12,
+    "dex": 22,
+    "sta": 16
+  },
+  {
+    "name": "Windie",
+    "cls": "Iris",
+    "lp": 7,
+    "str": 10,
+    "spd": 20,
+    "mag": 21,
+    "dex": 17,
+    "sta": 10
+  },
+  {
+    "name": "Windseed",
+    "cls": "Freelance Mage",
+    "lp": 9,
+    "str": 11,
+    "spd": 17,
+    "mag": 20,
+    "dex": 17,
+    "sta": 13
+  },
+  {
+    "name": "Yukino",
+    "cls": "Ninja",
+    "lp": 10,
+    "str": 18,
+    "spd": 22,
+    "mag": 16,
+    "dex": 17,
+    "sta": 11
+  },
+  {
+    "name": "Zhenghe",
+    "cls": "Armed Merchant",
+    "lp": 12,
+    "str": 16,
+    "spd": 20,
+    "mag": 11,
+    "dex": 18,
+    "sta": 16
+  }
+];
+
+const CLASSES = [
+  "Amazon",
+  "Automaton",
+  "Corsair",
+  "Court Mage (F)",
+  "Court Mage (M)",
+  "Crusader (F)",
+  "Crusader (M)",
+  "Dancer",
+  "Desert Guard",
+  "Diver",
+  "Diviner",
+  "Freelance Mage (F)",
+  "Freelance Mage (M)",
+  "Heavy Infantry",
+  "Hunter",
+  "Imperial Blacksmith",
+  "Imperial Guard (F)",
+  "Imperial Guard (M)",
+  "Iris",
+  "Levante Guard",
+  "Light Infantry (F)",
+  "Light Infantry (M)",
+  "Martial Artist",
+  "Mercenary (F)",
+  "Mercenary (M)",
+  "Mole",
+  "Nereid",
+  "Ninja",
+  "Nomad (F)",
+  "Nomad (M)",
+  "Ranger (F)",
+  "Ranger (M)",
+  "Saigo Clansman",
+  "Salamander",
+  "Strategist",
+  "Vagabond (F)",
+  "Vagabond (M)"
+];
+
+const FORMATIONS = [
+  "Free For All",
+  "Imperial Cross",
+  "Imperial Shield",
+  "Imperial Attack",
+  "Imperial Ray",
+  "Imperial Magic",
+  "Imperial Arrow",
+  "Imperial Force",
+  "Fanged Assault",
+  "Witch's Cap",
+  "Free For All 2",
+  "Iron Forge",
+  "Rising Phoenix",
+  "Dragon Stance",
+  "Mu Rampart",
+  "Rapid Stream",
+  "Seer's Focus",
+  "Charming Drive",
+  "Divine Wall",
+  "Whirlwind",
+  "Hunter's Gambit",
+  "Amazon Raid",
+  "Desert Fox",
+  "Lightning Flash",
+  "Flying Sword",
+  "Cosmic Ring",
+  "Volcanic Heart",
+  "Twin Pyramids",
+  "Crescent Tide",
+  "Winged Quintet",
+  "Puppet Army",
+  "Goblin Offense"
+];
